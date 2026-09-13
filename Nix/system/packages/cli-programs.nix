@@ -16,6 +16,7 @@
       tldr
       tmux
       tokei # code summary
+      tray-tui
       tree
       wine
       yazi

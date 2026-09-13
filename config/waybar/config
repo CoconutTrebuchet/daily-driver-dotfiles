@@ -39,7 +39,7 @@
 
     "sway/window": {
         "format": "{}",
-        "tooltip": false,
+        // "tooltip": false,
         "max-length": 50
     },
 

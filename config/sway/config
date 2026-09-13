@@ -69,6 +69,9 @@ client.focused_inactive #4e4e4e #3c3c3c #e6e6e6 #272727 #272727
 client.unfocused        #272727 #1f1f1f #e6e6e6 #272727 #272727
 client.urgent           #a32929 #772222 #e6e6e6 #a32929 #a32929
 
+# client.focused          #008ae6 #1b6698 #ffffff #008ae6 #008ae6
+# client.urgent           #ff0000 #990000 #e6e6e6 #ff0000 #ff0000
+
 default_border pixel 1
 default_floating_border pixel 1
 # gaps inner 4

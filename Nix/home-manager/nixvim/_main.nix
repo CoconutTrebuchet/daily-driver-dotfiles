@@ -1,7 +1,12 @@
 { config, ... }:
 {
   imports = [
-    ./modules/_imports.nix
+    ./autocmd.nix
+    ./blink-cmp.nix
+    ./keymaps.nix
+    ./lsp.nix
+    ./plugins.nix
+    ./smart-splits.nix
   ];
 
   programs.nixvim = {
@@ -16,31 +21,30 @@
     vimAlias = true;
 
     opts = {
-      # number = true;
-      # relativenumber = true;
-      shiftwidth = 2;
-      tabstop = 2;
-      softtabstop = 2;
-      cmdheight = 0;
-      ignorecase = true;
-      smartcase = true;
       autoindent = true;
-      wrap = false;
+      cmdheight = 0;
       cursorline = true;
       expandtab = false;
+      ignorecase = true;
+      shiftwidth = 2;
+      # showcmdloc = "statusline";
       signcolumn = "yes";
-      # statuscolumn = " %{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''}%=%s ";
+      smartcase = true;
+      softtabstop = 2;
       statuscolumn = "%s%{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''} ";
+      # statuscolumn = " %{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''}%=%s ";
+      tabstop = 2;
       termguicolors = true;
+      wrap = false;
     };
 
     extraConfigVim = ''
-      			set undofile
-      			set undodir=$HOME/.cache/nvim/undo//
-      			set clipboard=unnamedplus
-      			set rnu
-      			set nu
-      			colorscheme onedark
+      set undofile
+      set undodir=$HOME/.cache/nvim/undo//
+      set clipboard=unnamedplus
+      set rnu
+      set nu
+      colorscheme onedark
     '';
 
     diagnostic = {
@@ -48,12 +52,12 @@
         virtual_text = true;
         signs = {
           text = config.lib.nixvim.mkRaw ''
-            			{
-            				[vim.diagnostic.severity.ERROR] = "",
-            				[vim.diagnostic.severity.WARN] = "",
-            				[vim.diagnostic.severity.HINT] = "",
-            				[vim.diagnostic.severity.INFO] = "",
-            			}
+            {
+            	[vim.diagnostic.severity.ERROR] = "",
+            	[vim.diagnostic.severity.WARN] = "",
+            	[vim.diagnostic.severity.HINT] = "",
+            	[vim.diagnostic.severity.INFO] = "",
+            }
           '';
         };
         update_in_insert = true;

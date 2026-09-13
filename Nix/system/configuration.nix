@@ -8,8 +8,9 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./packages/_imports.nix
+    ./intel.nix
     ./networking.nix
+    ./packages/_imports.nix
     ./printing.nix
   ];
 
@@ -40,7 +41,7 @@
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
-  boot.loader.systemd-boot.configurationLimit = 10;
+  # boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
@@ -59,10 +60,6 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [
-      intel-media-driver
-      vpl-gpu-rt
-    ];
   };
 
   # Set your time zone.
@@ -177,19 +174,7 @@
     };
   };
 
-  services.greetd = {
-    enable = false;
-    settings = {
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time -r --cmd ${pkgs.writeShellScript "start-sway" ''
-          export XDG_CURRENT_DESKTOP=sway
-          export XDG_SESSION_TYPE=wayland
-          exec ${pkgs.sway}/bin/sway "$@"
-        ''}";
-        user = "greeter";
-      };
-    };
-  };
+  # display manager
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;

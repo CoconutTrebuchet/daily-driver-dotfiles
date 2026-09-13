@@ -2,7 +2,7 @@
 {
   imports = [
     ./gui.nix
-    ./nixvim/main.nix
+    ./nixvim/_main.nix
     ./zsh.nix
   ];
 
