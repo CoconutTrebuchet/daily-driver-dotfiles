@@ -22,22 +22,17 @@
     };
 
     initContent = ''
-      			# Unset beep
-      			unsetopt beep
+      # Unset beep
+      unsetopt beep
 
-      			# PATH
-      			export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
+      # PATH
+      export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
-      			# Source Nix profile if present
-      			if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
-      				. "$HOME/.nix-profile/etc/profile.d/nix.sh"
-      				fi
-
-      			HYPHEN_INSENSITIVE="true"
-      			ENABLE_CORRECTION="true"
-      			COMPLETION_WAITING_DOTS="true"
-      			DISABLE_UNTRACKED_FILES_DIRTY="true"
-      			HIST_STAMPS="yyyy-mm-dd"
+      HYPHEN_INSENSITIVE="true"
+      ENABLE_CORRECTION="true"
+      COMPLETION_WAITING_DOTS="true"
+      DISABLE_UNTRACKED_FILES_DIRTY="true"
+      HIST_STAMPS="yyyy-mm-dd"
     '';
 
     oh-my-zsh = {
@@ -46,7 +41,6 @@
       plugins = [
         "git"
         "colored-man-pages"
-        # "arduino-cli"
       ];
     };
   };

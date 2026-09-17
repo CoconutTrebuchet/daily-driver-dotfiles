@@ -1,5 +1,5 @@
 # Daily Driver Dotfiles
-My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Main WM is Sway but has Niri support. Bear in mind the Niri config has sway-like keybinds *and does not get updated*. This config is also ported to non-NixOS distros.
+My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Window manager is SwayWM with my own opinionated keybinds. This config is also ported to non-NixOS distros.
 
 **If you want to use these:**
 - Remember to edit the wallpaper paths in wpaperd, swaylock, and the swaywm config as you will get errors if you don't update them yourself.

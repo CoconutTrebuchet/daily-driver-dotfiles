@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ./gui.nix
+    ./user-interface.nix
     ./nixvim/_main.nix
     ./zsh.nix
   ];
@@ -49,7 +49,7 @@
       }
       {
         condition = "gitdir:~/Projects/professional/";
-        path = "~/Projects/work/.gitconfig-professional";
+        path = "~/Projects/professional/.gitconfig-professional";
       }
     ];
 
@@ -58,6 +58,7 @@
     settings = {
       credential."https://github.com".helper = "!gh auth git-credential";
       credential."https://gist.github.com".helper = "!gh auth git-credential";
+      init.defaultBranch = "main";
     };
   };
 }

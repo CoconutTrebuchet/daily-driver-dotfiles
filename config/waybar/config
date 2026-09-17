@@ -40,7 +40,7 @@
     "sway/window": {
         "format": "{}",
         // "tooltip": false,
-        "max-length": 50
+        "max-length": 45
     },
 
     "tray": {

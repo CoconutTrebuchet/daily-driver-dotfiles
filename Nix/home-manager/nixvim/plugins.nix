@@ -9,15 +9,15 @@
   programs.nixvim = {
     # tools
     plugins = {
-      nvim-autopairs.enable = true;
       comment.enable = true;
-      telescope.enable = true;
-      treesitter.enable = true;
       diffview.enable = true;
+      nvim-autopairs.enable = true;
+      nvim-tree.enable = true;
+      telescope.enable = true;
+      toggleterm.enable = true;
+      treesitter.enable = true;
       which-key.enable = true;
       yazi.enable = true;
-      toggleterm.enable = true;
-      nvim-tree.enable = true;
     };
 
     # look & feel

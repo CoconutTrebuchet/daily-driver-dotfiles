@@ -8,7 +8,6 @@ cp ~/.config/btop config/ -r
 cp ~/.config/fastfetch/ config/ -r
 cp ~/.config/fuzzel config/ -r
 cp ~/.config/mimeapps.list config/
-cp ~/.config/niri config/ -r
 cp ~/.config/sway config/ -r
 cp ~/.config/swaylock config/ -r
 cp ~/.config/swaync config/ -r

@@ -75,7 +75,8 @@
             "closeOthers": true,
             "forceOpen": false,
             "keepIcons": false,
-            "showFolderIcon": 1
+            "showFolderIcon": 1,
+            "closeServerFolder": false
         },
         "BetterGifAltText": {
             "enabled": false
@@ -659,7 +660,8 @@
             "enabled": false
         },
         "WhoReacted": {
-            "enabled": true
+            "enabled": true,
+            "clickableAvatars": true
         },
         "XSOverlay": {
             "enabled": false
@@ -726,6 +728,9 @@
         },
         "TenorGifSearch": {
             "enabled": false
+        },
+        "AddAttachments": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -738,7 +743,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1788480984740
+        "settingsSyncVersion": 1789612431906
     },
     "uiElements": {
         "chatBarButtons": {},

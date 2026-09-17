@@ -3,7 +3,7 @@ timestr=%I:%M %p
 datestr=%a %b %d
 
 font=SpaceMonoNerdFont
-image=~/Pictures/wallpapers/anime-night-edit.png
+image=~/Pictures/wallpapers/anime-night.png
 #screenshots
 effect-blur=6x5
 #effect-vignette=0.75:0.75

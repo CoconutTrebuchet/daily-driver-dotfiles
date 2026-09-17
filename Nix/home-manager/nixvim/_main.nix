@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   imports = [
     ./autocmd.nix
@@ -11,6 +11,8 @@
 
   programs.nixvim = {
     enable = true;
+    nixpkgs.source = pkgs.path;
+
     colorschemes.onedark = {
       enable = true;
       settings.style = "deep";
