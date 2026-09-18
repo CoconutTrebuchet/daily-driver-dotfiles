@@ -22,7 +22,6 @@
       pavucontrol
       peazip
       vesktop
-      # pkgs-stable.vesktop
       qalculate-gtk
       seahorse
       spotify

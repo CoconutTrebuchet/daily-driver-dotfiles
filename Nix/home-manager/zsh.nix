@@ -28,6 +28,10 @@
       # PATH
       export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
+      DISABLE_AUTO_UPDATE="true"
+      DISABLE_MAGIC_FUNCTIONS="true"
+      DISABLE_COMPFIX="true"
+
       HYPHEN_INSENSITIVE="true"
       ENABLE_CORRECTION="true"
       COMPLETION_WAITING_DOTS="true"
