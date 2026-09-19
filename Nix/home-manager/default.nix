@@ -1,31 +1,23 @@
-{ pkgs, ... }:
+{ ... }:
 {
   imports = [
     ./user-interface.nix
     ./nixvim/_main.nix
+    ./programs/_imports.nix
     ./zsh.nix
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   home = {
     username = "cocotreb";
     homeDirectory = "/home/cocotreb";
     stateVersion = "26.11";
     # stateVersion = "26.05";
-    packages = with pkgs; [
-    ];
     sessionVariables = {
       EDITOR = "nvim";
       TERM = "alacritty";
       QT_QPA_PLATFORMTHEME = "gtk3";
-    };
-  };
-
-  programs.librewolf = {
-    enable = true;
-    settings = {
-      "browser.privatebrowsing.autostart" = true;
-      "middlemouse.paste" = false;
-      "general.autoScroll" = true;
     };
   };
 

@@ -12,11 +12,6 @@
           enable = true;
           settings.formatting.command = [ "nixfmt" ];
         };
-        rust_analyzer = {
-          enable = true;
-          installCargo = false;
-          installRustc = false;
-        };
       };
     };
   };

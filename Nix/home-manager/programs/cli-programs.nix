@@ -1,26 +1,28 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages =
+  home.packages =
     with pkgs;
     [
       # INFO: useful stuff
       bat
-      btop
       dysk
-      fzf
+      feh
       github-cli
-      neovim
-      nvd # nix version diff
+      nixfmt
       nvtopPackages.intel
+      openjdk
       tldr
-      tmux
       tokei # code summary
       tray-tui
-      tree
       wine
-      yazi
       yt-dlp
+
+      (python3.withPackages (
+        python-pkgs: with python-pkgs; [
+          requests
+        ]
+      ))
     ]
     ++ [
       # INFO: shenanigans

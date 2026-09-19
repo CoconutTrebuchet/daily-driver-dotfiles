@@ -41,7 +41,6 @@
       hostname = "tpt14g5";
       pkgs-stable = import nixpkgs-stable {
         inherit system;
-        # config.allowUnfree = true;
       };
     in
     {

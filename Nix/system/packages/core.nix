@@ -1,27 +1,27 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    alacritty
-    cargo
-    feh
-    gcc
-    git
-    glib # required to launch gtk apps with gapplication
-    gnumake
-    home-manager
-    killall
-    nixfmt
-    ntfs3g # NTFS support
-    openjdk
-    rustc
-    unzip
-    wget
-
-    (python3.withPackages (
-      python-pkgs: with python-pkgs; [
-        requests
-      ]
-    ))
-  ];
+  environment.systemPackages =
+    with pkgs;
+    [
+      btop
+      fzf
+      gcc
+      git
+      glib # required to launch gtk apps with gapplication
+      gnumake
+      home-manager
+      ntfs3g # NTFS support
+      nvd # nix version diff
+      tmux
+      tree
+      unzip
+      vim
+      wget
+      yazi
+    ]
+    ++ [
+      inputs.helium.defaultPackage.${pkgs.stdenv.hostPlatform.system}
+    ];
+  programs.steam.enable = true;
 }

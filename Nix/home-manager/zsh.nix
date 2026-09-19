@@ -43,7 +43,6 @@
       enable = true;
       theme = "sorin";
       plugins = [
-        "git"
         "colored-man-pages"
       ];
     };

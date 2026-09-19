@@ -127,10 +127,6 @@
   # Enable zsh
   programs.zsh = {
     enable = true;
-    shellAliases = {
-      vi = "nvim";
-      vim = "nvim";
-    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.

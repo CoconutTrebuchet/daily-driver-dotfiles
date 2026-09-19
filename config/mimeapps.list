@@ -24,7 +24,10 @@ x-scheme-handler/x-github-client=github-desktop.desktop
 x-scheme-handler/x-github-desktop-dev-auth=github-desktop.desktop
 x-scheme-handler/about=helium.desktop
 x-scheme-handler/unknown=helium.desktop
-x-scheme-handler/mailto=helium.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-XLDOV3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-XLDOV3.desktop
+message/rfc822=userapp-Thunderbird-XLDOV3.desktop
+x-scheme-handler/net.thunderbird=userapp-Thunderbird-7ZZRV3.desktop
 
 [Added Associations]
 image/png=gimp.desktop;
@@ -44,3 +47,7 @@ application/zip=peazip-extract.desktop;userapp-alacritty -e unzip-5E6KT3.desktop
 application/x-shellscript=org.gnome.TextEditor.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
 image/jpeg=gimp.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-XLDOV3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-XLDOV3.desktop;
+message/rfc822=userapp-Thunderbird-XLDOV3.desktop;
+x-scheme-handler/net.thunderbird=userapp-Thunderbird-7ZZRV3.desktop;

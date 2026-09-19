@@ -21,12 +21,12 @@
     {
       mode = "n";
       action = "<cmd>sp<CR>";
-      key = "\\";
+      key = "|";
     }
     {
       mode = "n";
       action = "<cmd>vsp<CR>";
-      key = "|";
+      key = "\\";
     }
 
     # INFO: buffer line moving
