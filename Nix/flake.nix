@@ -25,6 +25,14 @@
       url = "github:FKouhai/helium2nix/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    /*
+      # noctalia shell
+      noctalia = {
+        url = "github:noctalia-dev/noctalia";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+    */
   };
 
   outputs =
@@ -59,7 +67,6 @@
         extraSpecialArgs = { inherit pkgs-stable inputs; };
         modules = [
           ./home-manager/default.nix
-          nixvim.homeModules.nixvim
         ];
       };
     };

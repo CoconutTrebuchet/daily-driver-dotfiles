@@ -1,15 +1,3 @@
-# Variables
-#
-set $mod Mod4
-set $left h
-set $down j
-set $up k
-set $right l
-set $term alacritty
-# fuzzel is launched this way to make QT apps honor the
-# QT_GPA_PLATFORMTHEME=gtk3 environment variable
-set $menu "sh -c 'fuzzel'"
-
 # Wallpaper
 #
 output * bg $HOME/Pictures/wallpapers/anime-night.png fill
@@ -46,10 +34,6 @@ exec swayidle -w \
         pointer_accel 0.65
     }
 
-    input type:pointer {
-        #scroll_factor 1.2
-    }
-
     input type:keyboard {
         repeat_delay 450
         repeat_rate 35
@@ -71,7 +55,7 @@ client.urgent           #a32929 #772222 #e6e6e6 #a32929 #a32929
 
 default_border pixel 1
 default_floating_border pixel 1
-# gaps inner 4
+# gaps outer 5
 
 # Waybar:
 #
@@ -87,6 +71,7 @@ title_align center
 exec swaync
 exec autotiling
 exec swayosd-server
+# exec noctalia
 font pango:"Adwaita Sans" 10
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 
@@ -99,4 +84,4 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 
 # END
 include /etc/sway/config.d/*
-include ./config.d/*
+include ./config.d/*.conf

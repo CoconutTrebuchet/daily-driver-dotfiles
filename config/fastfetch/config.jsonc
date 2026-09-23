@@ -12,7 +12,10 @@
     "packages",
     "shell",
     "de",
-    "wm",
+		{
+			"type": "wm",
+			"format": "{pretty-name} {version}"
+		},
     "wmtheme",
     "theme",
     "terminal",

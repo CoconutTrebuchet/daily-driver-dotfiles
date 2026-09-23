@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   imports = [
     ./autocmd.nix
@@ -7,6 +12,7 @@
     ./lsp.nix
     ./plugins.nix
     ./smart-splits.nix
+    inputs.nixvim.homeModules.nixvim
   ];
 
   programs.nixvim = {

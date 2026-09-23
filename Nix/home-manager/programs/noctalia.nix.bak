@@ -1,0 +1,65 @@
+{ inputs, config, ... }:
+{
+  imports = [
+    inputs.noctalia.homeModules.default
+  ];
+
+  programs.noctalia = {
+    enable = false;
+
+    settings = {
+      location.auto_locate = true;
+      theme = {
+        mode = "dark";
+        shell_mode = "follow";
+        source = "wallpaper";
+        wallpaper_scheme = "m3-rainbow";
+      };
+
+      wallpaper = {
+        enabled = true;
+        default.path = "${config.home.homeDirectory}/Pictures/wallpapers/anime-night.png";
+      };
+
+      bar = {
+        default = {
+          margin_edge = 0;
+          margin_ends = 0;
+          position = "left";
+          radius = 0;
+          radius_bottom_left = 0;
+          radius_bottom_right = 0;
+          radius_top_left = 0;
+          radius_top_right = 0;
+          scale = 1.2;
+          thickness = 36;
+          widget_spacing = 18;
+
+          start = [
+            "clock"
+            "battery"
+            "volume"
+            "brightness"
+            "network"
+            "bluetooth"
+          ];
+          center = [ "workspaces" ];
+          end = [
+            "tray"
+            "privacy"
+            "power_profile"
+            "clipboard"
+            "caffeine"
+            "nightlight"
+            "weather"
+          ];
+        };
+      };
+      widget = {
+        clock.vertical_format = "{:%I\n%M\n%P}";
+        audio_visualizer.show_when_idle = true;
+        network.show_label = false;
+      };
+    };
+  };
+}

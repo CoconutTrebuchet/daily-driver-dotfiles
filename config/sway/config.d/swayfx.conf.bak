@@ -1,0 +1,7 @@
+animation_duration_ms 135
+shadows enable
+shadow_blur_radius 12
+
+layer_effects "launcher" {
+	shadows enable;
+}

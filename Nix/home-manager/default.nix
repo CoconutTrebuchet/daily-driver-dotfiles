@@ -1,10 +1,9 @@
 { ... }:
 {
   imports = [
-    ./user-interface.nix
     ./nixvim/_main.nix
     ./programs/_imports.nix
-    ./zsh.nix
+    ./user-interface.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

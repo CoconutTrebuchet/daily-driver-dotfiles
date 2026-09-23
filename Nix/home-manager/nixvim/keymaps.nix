@@ -43,7 +43,19 @@
       key = "<leader>>";
     }
 
-    # INFO: custom leader keybinds
+    # INFO: git-related
+    {
+      mode = "n";
+      action = "<cmd>DiffviewOpen<CR>";
+      key = "<leader>gd";
+    }
+    {
+      mode = "n";
+      action = "<cmd>Gitsigns toggle_signs<CR>";
+      key = "<leader>gs";
+    }
+
+    # INFO: other leader keybinds
     {
       mode = "n";
       action = "<cmd>Yazi<CR>";
@@ -58,11 +70,6 @@
       mode = "n";
       action = "<cmd>ToggleTerm<CR>";
       key = "<leader>t";
-    }
-    {
-      mode = "n";
-      action = "<cmd>DiffviewOpen<CR>";
-      key = "<leader>d";
     }
 
     # INFO: Telescope keybinds

@@ -51,7 +51,6 @@
             "searchcount"
           ];
           sections.lualine_x = [
-            # "%S"
             "lsp_status"
           ];
           options.component_separators = {

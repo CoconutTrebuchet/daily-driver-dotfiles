@@ -6,6 +6,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
+set $ipc noctalia msg
 # fuzzel is launched this way to make QT apps honor the
 # QT_GPA_PLATFORMTHEME=gtk3 environment variable
 set $menu "sh -c 'fuzzel'"
@@ -18,11 +19,11 @@ floating_modifier $mod normal
 bindsym $mod+Shift+r reload
 bindsym $mod+u [urgent=latest] focus 
 
-bindsym $mod+n exec swaync-client -t -sw
-bindsym $mod+m exec pkill -SIGUSR1 waybar
-bindsym $mod+Shift+e exec wlogout -m 330
-bindsym $mod+d exec $menu
-bindsym F8 exec $HOME/.config/sway/scripts/toggle-profiles.sh
+bindsym F8 exec $ipc power-cycle
+bindsym $mod+d exec $ipc panel-toggle launcher
+bindsym $mod+Shift+e exec $ipc panel-toggle session
+bindsym $mod+m exec $ipc bar-toggle
+bindsym $mod+n exec $ipc panel-toggle control-center notifications
 
 # Moving around:
 #
@@ -118,18 +119,18 @@ bindsym $mod+Shift+p mode "passthru"
 # Utilities:
 #
 # Audio
-bindsym --locked XF86AudioMute exec swayosd-client --output-volume mute-toggle
-bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
-bindsym --locked XF86AudioLowerVolume exec swayosd-client --output-volume -5
-bindsym --locked Shift+XF86AudioLowerVolume exec swayosd-client --output-volume -1
-bindsym --locked XF86AudioRaiseVolume exec swayosd-client --output-volume 5 --max-volume 100
-bindsym --locked Shift+XF86AudioRaiseVolume exec swayosd-client --output-volume 1 --max-volume 100
+bindsym --locked XF86AudioMute exec $ipc volume-mute
+bindsym --locked XF86AudioMicMute exec $ipc mic-mute
+bindsym --locked XF86AudioLowerVolume exec $ipc volume-down
+bindsym --locked Shift+XF86AudioLowerVolume exec $ipc volume-down 1
+bindsym --locked XF86AudioRaiseVolume exec $ipc volume-up
+bindsym --locked Shift+XF86AudioRaiseVolume exec $ipc volume-up 1
 
 # Brightness
-bindsym --locked XF86MonBrightnessDown exec $HOME/.config/sway/scripts/brightness-down.sh 5
-bindsym --locked Shift+XF86MonBrightnessDown exec $HOME/.config/sway/scripts/brightness-down.sh 1
-bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-bindsym --locked Shift+XF86MonBrightnessUp exec brightnessctl set 1%+
+bindsym --locked XF86MonBrightnessDown exec $ipc brightness-down 5%
+bindsym --locked Shift+XF86MonBrightnessDown exec $ipc brightness-down 1%
+bindsym --locked XF86MonBrightnessUp exec $ipc brightness-up 5%
+bindsym --locked Shift+XF86MonBrightnessUp exec $ipc brightness-up 1%
 
 # Screenshots
 bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh

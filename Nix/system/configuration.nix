@@ -10,7 +10,7 @@
     ./hardware-configuration.nix
     ./intel.nix
     ./networking.nix
-    ./packages/_imports.nix
+    ./programs/_imports.nix
     ./printing.nix
   ];
 
@@ -109,9 +109,7 @@
         screencast = {
           max_fps = 30;
           chooser_type = "dmenu";
-          chooser_cmd = "${pkgs.fuzzel}/bin/fuzzel --dmenu --prompt \"share> \"";
-          exec_before = "${pkgs.swaynotificationcenter}/bin/swaync-client -dnd-on";
-          exec_after = "${pkgs.swaynotificationcenter}/bin/swaync-client -dnd-off";
+          chooser_cmd = "${pkgs.fuzzel}/bin/fuzzel --dmenu";
         };
       };
     };
@@ -186,8 +184,9 @@
   services.gvfs.enable = true;
   services.tumbler.enable = true;
 
-  # Power profiles
+  # Power-related services
   services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
 
   # allow btop to see GPU
   security.wrappers.btop = {

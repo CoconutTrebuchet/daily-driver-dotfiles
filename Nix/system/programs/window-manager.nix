@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     autotiling
+    dwl
     fuzzel
     grim
     libnotify
@@ -19,6 +20,7 @@
 
   programs.sway = {
     enable = true;
+    # package = pkgs.swayfx;
     wrapperFeatures.gtk = true;
   };
 }

@@ -26,10 +26,10 @@
     "script-fail-notify": true,
     "cssPriority": "user",
     "widgets": [
-        "title",
-        "dnd",
-        "notifications",
-		"mpris"
+			"title",
+			"dnd",
+			"notifications",
+			"mpris"
     ],
     "widget-config": {
         "title": {
