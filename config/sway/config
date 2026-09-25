@@ -1,6 +1,6 @@
 # Wallpaper
 #
-output * bg $HOME/Pictures/wallpapers/anime-night.png fill
+output * bg $HOME/Pictures/wallpapers/wallhaven-qrgqyq-edit.png fill
 #exec wpaperd -d
 
 # Outputs

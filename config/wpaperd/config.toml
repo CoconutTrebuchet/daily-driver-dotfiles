@@ -1,8 +1,0 @@
-[default]
-duration = "20m"
-mode = "center"
-sorting = "random"
-transition-time = 2000
-[any]
-path = "~/Pictures/Backgrounds/nature/"
-[default.transition.fade]
