@@ -2,7 +2,7 @@
 # A script that uses grim and slurp to take a selective screenshot.
 # The result is saved to a file and to the clipboard.
 
-SELECTION=$(slurp)
+SELECTION=$(slurp -b 00000077 -c dddddd)
 
 OUTPUT="$HOME/Pictures/Screenshots/$(date +'%y%m%d_%H%M%S').png"
 

@@ -1,4 +1,4 @@
-{ ... }:
+{ config, pkgs, ... }:
 {
   imports = [
     ./nixvim/_main.nix
@@ -17,6 +17,7 @@
       EDITOR = "nvim";
       TERM = "alacritty";
       QT_QPA_PLATFORMTHEME = "gtk3";
+      NH_FLAKE = "${config.home.homeDirectory}/Nix/";
     };
   };
 

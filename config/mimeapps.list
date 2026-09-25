@@ -28,6 +28,7 @@ x-scheme-handler/mailto=userapp-Thunderbird-5J2GV3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-5J2GV3.desktop
 message/rfc822=userapp-Thunderbird-5J2GV3.desktop
 x-scheme-handler/net.thunderbird=userapp-Thunderbird-ZMUEV3.desktop
+application/pdf=userapp-evince-UAV5V3.desktop
 
 [Added Associations]
 image/png=gimp.desktop;
@@ -41,7 +42,7 @@ application/x-extension-shtml=helium.desktop;
 application/xhtml+xml=helium.desktop;
 application/x-extension-xhtml=helium.desktop;
 application/x-extension-xht=helium.desktop;
-application/pdf=draw.desktop;helium.desktop;chromium-browser.desktop;
+application/pdf=qpdfview.desktop;draw.desktop;helium.desktop;chromium-browser.desktop;userapp-evince-UAV5V3.desktop;
 text/plain=org.gnome.TextEditor.desktop;
 application/zip=peazip-extract.desktop;userapp-alacritty -e unzip-5E6KT3.desktop;
 application/x-shellscript=org.gnome.TextEditor.desktop;
@@ -51,3 +52,4 @@ x-scheme-handler/mailto=userapp-Thunderbird-5J2GV3.desktop;userapp-Thunderbird-X
 x-scheme-handler/mid=userapp-Thunderbird-5J2GV3.desktop;userapp-Thunderbird-XLDOV3.desktop;
 message/rfc822=userapp-Thunderbird-XLDOV3.desktop;userapp-Thunderbird-5J2GV3.desktop;
 x-scheme-handler/net.thunderbird=userapp-Thunderbird-ZMUEV3.desktop;userapp-Thunderbird-7ZZRV3.desktop;
+text/markdown=org.xfce.mousepad.desktop;

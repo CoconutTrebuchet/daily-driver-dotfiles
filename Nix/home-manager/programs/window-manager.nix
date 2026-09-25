@@ -1,9 +1,8 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     autotiling
-    dwl
     fuzzel
     grim
     libnotify
@@ -11,16 +10,10 @@
     swaybg
     swaylock-effects
     swaynotificationcenter
-    swayosd
+    # swayosd
     waybar
     wev
     wl-clipboard
     wlogout
   ];
-
-  programs.sway = {
-    enable = true;
-    # package = pkgs.swayfx;
-    wrapperFeatures.gtk = true;
-  };
 }

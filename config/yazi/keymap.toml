@@ -2,4 +2,5 @@
 prepend_keymap = [
   { on = ["<C-n>"], run = "shell '$EDITOR' --block", desc = "Open $EDITOR here" },
   { on = ["!"], run = "shell '$SHELL' --block", desc = "Open $SHELL here" },
+	{ on = ["g", "n"], run = "cd $HOME/Nix/", desc = "Go to ~/Nix"  }
 ]

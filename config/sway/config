@@ -70,7 +70,7 @@ focus_follows_mouse no
 title_align center
 exec swaync
 exec autotiling
-exec swayosd-server
+# exec swayosd-server
 # exec noctalia
 font pango:"Adwaita Sans" 10
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start

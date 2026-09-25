@@ -16,9 +16,10 @@
 
   home.packages = with pkgs; [
     blueman
+    evince
+    mousepad
     freetube
     gimp
-    gnome-text-editor
     gnome-weather
     kdePackages.kdeconnect-kde
     kicad

@@ -8,10 +8,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./intel.nix
-    ./networking.nix
-    ./programs/_imports.nix
-    ./printing.nix
+    ./modules/_imports.nix
   ];
 
   # Storage optimization
@@ -107,9 +104,9 @@
       enable = true;
       settings = {
         screencast = {
-          max_fps = 30;
+          max_fps = 60;
           chooser_type = "dmenu";
-          chooser_cmd = "${pkgs.fuzzel}/bin/fuzzel --dmenu";
+          chooser_cmd = "${pkgs.wmenu}/bin/wmenu -bi -f 'HackMonoNerdFont 14'";
         };
       };
     };
@@ -187,14 +184,6 @@
   # Power-related services
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
-
-  # allow btop to see GPU
-  security.wrappers.btop = {
-    owner = "root";
-    group = "root";
-    capabilities = "cap_perfmon,cap_dac_read_search,cap_sys_ptrace=+ep";
-    source = "${pkgs.btop}/bin/btop";
-  };
 
   # swap
   swapDevices = [
