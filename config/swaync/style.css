@@ -7,7 +7,7 @@
 @define-color noti-bg #353535;
 @define-color noti-bg-darker #242424;
 @define-color text-color #e6e6e6;
-@define-color accent-color #3a7099;
+@define-color accent-color #3f7aa6;
 
 :root {
   --border-radius: 0px;
@@ -30,11 +30,18 @@
 
 .control-center {
     background: @cc-bg;
-    border: 1px solid @noti-border-color;
+    outline: 1px solid @noti-border-color;
+    outline-offset: -1px;
     border-radius: 0px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); */
 }
 
+.control-center scrollbar trough,
+.control-center scrollbar slider {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
 
 /* Notifications */
 /* ============= */
@@ -61,7 +68,7 @@
 }
 
 .close-button {
-    color: @accent-color;
+    color: text-color;
     background: transparent;
     text-shadow: none;
     padding: 0;
@@ -104,7 +111,7 @@
 }
 
 .blank-window {
-    /* background: alpha(black, 0.25); */
+    background: alpha(black, 0.25);
 }
 
 /* Widgets */

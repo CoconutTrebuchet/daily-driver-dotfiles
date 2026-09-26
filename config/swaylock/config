@@ -2,7 +2,7 @@ clock
 timestr=%I:%M %p
 datestr=%a %b %d
 
-font=SpaceMonoNerdFont
+font=HackMonoNerdFont
 image=~/Pictures/wallpapers/wallhaven-qrgqyq-edit.png
 #screenshots
 effect-blur=6x5
@@ -24,7 +24,7 @@ line-clear-color=#ffffff
 line-ver-color=#ffffff
 line-wrong-color=#ffffff
 
-text-clear=CLEAR
+text-clear=CLEARED
 text-ver=...
 text-wrong=TRY AGAIN
 
