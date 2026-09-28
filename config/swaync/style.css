@@ -62,13 +62,8 @@
     font-size: 13px;
 }
 
-.notification-group, .notification-default-action:hover,
-.notification-content:hover {
-    background: transparent;
-}
-
 .close-button {
-    color: text-color;
+    color: @text-color;
     background: transparent;
     text-shadow: none;
     padding: 0;
@@ -78,12 +73,25 @@
 }
 
 .summary {
-	padding-top: 5px;
+		padding-top: 5px;
     font-size: 18px;
 }
 
 .body {
     font-size: 16px;
+}
+
+.notification-group, .notification-default-action:hover,
+.notification-content:hover {
+    background: transparent;
+}
+
+.notification-group-close-all-button,
+.notification-group-collapse-button,
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+	background: transparent;
+	border: none;
 }
 
 /* Notification Actions */
@@ -111,7 +119,7 @@
 }
 
 .blank-window {
-    background: alpha(black, 0.25);
+    /* background: alpha(black, 0.25); */
 }
 
 /* Widgets */

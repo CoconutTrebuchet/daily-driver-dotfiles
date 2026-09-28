@@ -5,7 +5,7 @@ datestr=%a %b %d
 font=HackMonoNerdFont
 image=~/Pictures/wallpapers/wallhaven-qrgqyq-edit.png
 #screenshots
-effect-blur=6x5
+effect-blur=7x6
 #effect-vignette=0.75:0.75
 ignore-empty-password
 

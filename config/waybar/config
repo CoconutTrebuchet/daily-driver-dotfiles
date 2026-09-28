@@ -106,6 +106,7 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
+				"tooltip": false,
         "format-icons": ["󰽥", "󰃞 ", "󰃟 ", "󰃠 "],
         "interval": 60
     },

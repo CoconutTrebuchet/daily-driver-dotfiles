@@ -1,4 +1,4 @@
-{ pkgs, hostname, ... }:
+{ hostname, ... }:
 
 {
   networking.hostName = hostname; # Define your hostname.
@@ -10,6 +10,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Tailscale
+  services.tailscale.enable = true;
 
   # restart tailscale after resume, since it breaks DNS resolution
   powerManagement.resumeCommands = ''

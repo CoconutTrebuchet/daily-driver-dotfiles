@@ -1,11 +1,10 @@
 #!/bin/bash
-# This script is intended to ensure that the backlight doesn't turn off when
-# the brightness is all the way down.
-
+max=$(brightnessctl m)
 current=$(brightnessctl g)
+new_value=$(( current - (max * "$1" / 100) ))
 
-if [[ "$current" -le 7 ]]; then
+if [[ "$new_value" -le 7 ]]; then
   brightnessctl s 1
 else
-  brightnessctl s "$1"%-
+  brightnessctl s "$1%-"
 fi

@@ -43,9 +43,6 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # Tailscale
-  services.tailscale.enable = true;
-
   # Nix flakes
   nix.settings.experimental-features = [
     "nix-command"
