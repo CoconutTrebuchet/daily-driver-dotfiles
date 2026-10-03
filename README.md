@@ -1,5 +1,5 @@
 # Daily Driver Dotfiles
-My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Window manager is SwayWM with my own opinionated keybinds. This config is also ported to non-NixOS distros.
+My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Window manager is SwayWM with my own opinionated keybinds. Display manager is greetd with tuigreet. This config is also ported to non-NixOS distros.
 
 **If you want to use these:**
 - Remember to edit the wallpaper paths in swaylock and the swaywm config as you will get errors if you don't update them yourself.
@@ -18,6 +18,7 @@ My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.c
 - `Mod+U` focuses the most recent urgent window
 - `Mod+C` moves floating windows to the center of the workspace
 - `Mod+N` brings up the SwayNC control panel, `Mod+M` toggles the waybar
+- And a lot more including a couple of modes, etc. I can't be bothered to document everything...
 
 ## Screenshot
 ![Image of my desktop](./image.png)
