@@ -40,7 +40,6 @@
       home-manager,
       nixpkgs,
       nixpkgs-stable,
-      nixvim,
       ...
     }@inputs:
     let

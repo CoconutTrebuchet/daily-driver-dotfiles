@@ -4,12 +4,10 @@
     "height": 30,
     "modules-left": [
         "sway/workspaces",
-        // "niri/workspaces",
         "tray",
         "sway/scratchpad",
-        "sway/window",
-        // "niri/window",
         "sway/mode",
+        "sway/window",
     ],
 
     "modules-center": ["clock#date", "clock#time"],

@@ -3,7 +3,7 @@ timestr=%I:%M %p
 datestr=%a %b %d
 
 font=HackMonoNerdFont
-image=~/Pictures/wallpapers/wallhaven-qrgqyq-edit.png
+image=~/Pictures/wallpapers/wallhaven-qrgqyq-edit-downscale.png
 #screenshots
 effect-blur=7x6
 #effect-vignette=0.75:0.75

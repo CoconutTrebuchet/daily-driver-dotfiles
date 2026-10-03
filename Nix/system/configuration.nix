@@ -97,19 +97,22 @@
 
   xdg.portal = {
     enable = true;
+    config.common = {
+      default = "wlr";
+    };
     wlr = {
       enable = true;
       settings = {
         screencast = {
           max_fps = 60;
           chooser_type = "dmenu";
-          chooser_cmd = "${pkgs.wmenu}/bin/wmenu -bif 'HackMonoNerdFont 14'";
+          chooser_cmd = "${pkgs.wmenu}/bin/wmenu -bif 'HackMonoNerdFont 14' -l 5";
         };
       };
     };
     extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
     ];
   };
 
@@ -162,9 +165,11 @@
   };
 
   # display manager
-  services.displayManager.sddm = {
+  services.greetd = {
     enable = true;
-    wayland.enable = true;
+    settings.default_session = {
+      command = "${pkgs.tuigreet}/bin/tuigreet -tr --remember-session";
+    };
   };
 
   # Fprintd

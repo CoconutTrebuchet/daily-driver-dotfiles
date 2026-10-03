@@ -1,6 +1,6 @@
 # Wallpaper
 #
-output * bg $HOME/Pictures/wallpapers/wallhaven-qrgqyq-edit.png fill
+output * bg $HOME/Pictures/wallpapers/wallhaven-qrgqyq-edit-downscale.png fill
 
 # Outputs
 
