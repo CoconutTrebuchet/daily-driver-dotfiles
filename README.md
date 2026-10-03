@@ -29,6 +29,7 @@ My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.c
 
 [tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)
 
+[Reddit post where I found the wallpaper](https://www.reddit.com/r/unixporn/comments/1w8vwta/dwm_cozy_anime_girl_rice/)
 
 **Old wallpaper links**
 
