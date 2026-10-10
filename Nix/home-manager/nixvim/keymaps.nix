@@ -54,6 +54,11 @@
       action = "<cmd>Gitsigns toggle_signs<CR>";
       key = "<leader>gs";
     }
+    {
+      mode = "n";
+      action = "<cmd>Gitsigns toggle_current_line_blame<CR>";
+      key = "<leader>gb";
+    }
 
     # INFO: other leader keybinds
     {

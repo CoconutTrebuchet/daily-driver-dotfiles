@@ -10,7 +10,6 @@
     swaybg
     swaylock-effects
     swaynotificationcenter
-    # swayosd
     waybar
     wev
     wl-clipboard

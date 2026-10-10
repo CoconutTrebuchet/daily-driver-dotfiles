@@ -3,7 +3,8 @@
 rm config/* -r
 rm Nix/ -r
 
-cp ~/.config/alacritty config/ -r
+# cp ~/.config/alacritty config/ -r
+cp ~/.config/foot config/ -r
 cp ~/.config/btop config/ -r
 cp ~/.config/fastfetch/ config/ -r
 cp ~/.config/fuzzel config/ -r

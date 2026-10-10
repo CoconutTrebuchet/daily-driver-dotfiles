@@ -23,8 +23,7 @@
 		},
     "gpu",
     "memory",
-    "poweradapter",
-    "break",
+		"break",
     "colors"
   ]
 }

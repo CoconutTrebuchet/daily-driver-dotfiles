@@ -396,7 +396,7 @@
                         "id": "w1g35gly94m",
                         "name": "College Friends",
                         "color": 15844367,
-                        "collapsed": false,
+                        "collapsed": true,
                         "channels": [
                             "1485446208947228703",
                             "1478440359338971391",
@@ -413,7 +413,8 @@
                             "1414991752477147309",
                             "1514379516292763708",
                             "1521169711302312157",
-                            "1418308520763199650"
+                            "1418308520763199650",
+                            "1553074265371189250"
                         ]
                     },
                     {
@@ -728,10 +729,10 @@
         "MusicRichPresence": {
             "enabled": false
         },
-        "TenorGifSearch": {
+        "AddAttachments": {
             "enabled": false
         },
-        "AddAttachments": {
+        "GifProviderSwitcher": {
             "enabled": false
         }
     },
@@ -745,11 +746,12 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1790793428411
+        "settingsSyncVersion": 1791516546997
     },
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
     },
-    "windowsMaterial": "none"
+    "windowsMaterial": "none",
+    "nativeTitleBar": false
 }

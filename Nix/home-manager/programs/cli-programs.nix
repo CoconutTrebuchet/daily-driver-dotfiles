@@ -9,6 +9,7 @@
       dysk
       feh
       github-cli
+      guile
       nixfmt
       nvtopPackages.intel
       openjdk

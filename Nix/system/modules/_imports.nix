@@ -1,6 +1,6 @@
 {
   imports = [
-    ./core.nix
+    ./programs.nix
     ./fonts.nix
     ./intel.nix
     ./networking.nix

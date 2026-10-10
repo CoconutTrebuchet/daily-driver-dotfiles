@@ -3,7 +3,7 @@
   ...
 }:
 {
-  programs.alacritty.enable = true;
+  # programs.alacritty.enable = true;
   programs.obs-studio.enable = true;
   programs.librewolf = {
     enable = true;
