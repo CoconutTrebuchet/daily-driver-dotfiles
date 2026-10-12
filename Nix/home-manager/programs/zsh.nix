@@ -14,10 +14,11 @@
     defaultKeymap = "emacs";
 
     shellAliases = {
-      pwdcp = "pwd | wl-copy && echo 'current directory copied'";
+      flakeupdate = "nix flake update --flake $NH_FLAKE";
       homelabssh = "ssh cocotreb@lx6810-server";
-      wttr = "curl wttr.in | less";
+      pwdcp = "pwd | wl-copy && echo 'current directory copied'";
       switchgens = "sudo nix-env --switch-generation --profile /nix/var/nix/profiles/system";
+      wttr = "curl wttr.in | less";
     };
 
     initContent = ''

@@ -1,10 +1,21 @@
+// logo source
+// https://www.sekaipedia.org/wiki/Megurine_Luka
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
 	"logo": {
-		"source": "NixOS2"
+		// "source": "NixOS2"
+		"type": "sixel",
+		"source": "$HOME/.config/fastfetch/1200px-Megurine_Luka-2720703339.png",
+		"width": 19
+	},
+	"display": {
+		"color": {
+			"title": "magenta",
+			"keys": "magenta"
+		}
 	},
   "modules": [
-    "title",
+		"title",
     "os",
     "host",
     "kernel",

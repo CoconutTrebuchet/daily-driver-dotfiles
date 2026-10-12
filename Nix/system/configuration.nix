@@ -103,7 +103,7 @@
         screencast = {
           max_fps = 60;
           chooser_type = "dmenu";
-          chooser_cmd = "${pkgs.wmenu}/bin/wmenu -bif 'HackMonoNerdFont 14' -l 5";
+          chooser_cmd = "${pkgs.wmenu}/bin/wmenu -bif 'HackMonoNerdFont 15' -l 5";
         };
       };
     };
