@@ -15,7 +15,7 @@
     # stateVersion = "26.05";
     sessionVariables = {
       EDITOR = "nvim";
-      TERM = "footclient";
+      TERM = "foot";
       QT_QPA_PLATFORMTHEME = "gtk3";
       NH_FLAKE = "${config.home.homeDirectory}/Nix/";
     };
