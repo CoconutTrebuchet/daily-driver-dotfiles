@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   programs.steam.enable = true;
@@ -18,26 +18,18 @@
     source = "${pkgs.btop}/bin/btop";
   };
 
-  environment.systemPackages =
-    with pkgs;
-    [
-      fzf
-      gcc
-      git
-      glib # required to launch gtk apps with gapplication
-      gnumake
-      home-manager
-      nh
-      ntfs3g # NTFS support
-      nvd # nix version diff
-      tmux
-      tree
-      unzip
-      vim
-      yazi
-      wget
-    ]
-    ++ [
-      inputs.helium.defaultPackage.${pkgs.stdenv.hostPlatform.system}
-    ];
+  environment.systemPackages = with pkgs; [
+    fzf
+    gcc
+    git
+    gnumake
+    home-manager
+    ntfs3g # NTFS support
+    tmux
+    tree
+    unzip
+    vim
+    yazi
+    wget
+  ];
 }

@@ -6,7 +6,11 @@
 		// "source": "NixOS2"
 		"type": "sixel",
 		"source": "$HOME/.config/fastfetch/1200px-Megurine_Luka-2720703339.png",
-		"width": 19
+		"width": 20,
+		"padding": {
+			"left": 0,
+			"right": 2
+		}
 	},
 	"display": {
 		"color": {
@@ -16,6 +20,7 @@
 	},
   "modules": [
 		"title",
+		"separator",
     "os",
     "host",
     "kernel",
