@@ -1,12 +1,12 @@
 @define-color font-color #e6e6e6;
 @define-color black #0d0d0d;
 @define-color grey #282828;
-@define-color light-grey #424242;
+@define-color light-grey #444444;
 @define-color red #ff0000;
 
 * {
   font-family: "Adwaita Sans", "Font Awesome";
-  font-size: 19px;
+  font-size: 20px;
 }
 
 window#waybar { 

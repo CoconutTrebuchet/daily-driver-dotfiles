@@ -16,8 +16,8 @@
 
   # restart tailscale after resume, since it breaks DNS resolution
   powerManagement.resumeCommands = ''
-    	systemctl restart tailscaled.service
-    	'';
+    systemctl restart tailscaled.service
+  '';
 
   networking.nameservers = [
     "1.1.1.1"

@@ -11,7 +11,6 @@ output eDP-1 position 0 0
 output * scale 1
 workspace 1 output eDP-1
 
-
 # Swayidle
 #
 exec swayidle -w \
@@ -70,7 +69,6 @@ title_align center
 exec swaync
 exec autotiling
 exec foot -s
-# exec swayosd-server
 # exec noctalia
 font pango:"Adwaita Sans" 10
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start

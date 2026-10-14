@@ -430,7 +430,8 @@
                             "1459410225504194705",
                             "1445856110946029658",
                             "1492712886827487312",
-                            "1404235871770775623"
+                            "1404235871770775623",
+                            "1549240885328355458"
                         ]
                     },
                     {
@@ -746,7 +747,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1791516546997
+        "settingsSyncVersion": 1791909283855
     },
     "uiElements": {
         "chatBarButtons": {},

@@ -1,9 +1,31 @@
 { config, ... }:
 
 {
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+    presets = [ "nerd-font-symbols" ];
+    settings = {
+      add_newline = false;
+      format = "$directory$nix_shell$python$git_branch$git_state$git_status$cmd_duration$line_break$character";
+      character = {
+        success_symbol = "[❯](green)";
+        error_symbol = "[❯](green)";
+        vicmd_symbol = "[❯](green)";
+      };
+    };
+  };
+
   programs.zsh = {
     enable = true;
-    # fastSyntaxHighlighting.enable = true;
+
+    # oh-my-zsh = {
+    #   enable = true;
+    #   theme = "sorin";
+    #   plugins = [
+    #     "colored-man-pages"
+    #   ];
+    # };
 
     history = {
       path = "${config.home.homeDirectory}/.histfile";
@@ -25,6 +47,9 @@
       # Unset beep
       unsetopt beep
 
+      # enable correction
+      setopt CORRECT
+
       # PATH
       export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
@@ -38,13 +63,5 @@
       DISABLE_UNTRACKED_FILES_DIRTY="true"
       HIST_STAMPS="yyyy-mm-dd"
     '';
-
-    oh-my-zsh = {
-      enable = true;
-      theme = "sorin";
-      plugins = [
-        "colored-man-pages"
-      ];
-    };
   };
 }

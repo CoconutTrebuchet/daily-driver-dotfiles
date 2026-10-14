@@ -1,11 +1,12 @@
 { pkgs, ... }:
 
 {
+  programs.bat.enable = true;
+
   home.packages =
     with pkgs;
     [
       # INFO: useful stuff
-      bat
       dysk
       feh
       github-cli
