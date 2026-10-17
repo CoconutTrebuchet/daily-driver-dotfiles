@@ -2,14 +2,15 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./modules/_imports.nix
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   # Storage optimization
   nix.gc = {
@@ -133,8 +134,7 @@
     ];
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  users.users."root".shell = pkgs.bash;
 
   # Bluetooth
   hardware.bluetooth = {
@@ -177,6 +177,7 @@
   security.polkit.enable = true;
   services.gvfs.enable = true;
   services.tumbler.enable = true;
+  services.fwupd.enable = true;
 
   # Power-related services
   services.power-profiles-daemon.enable = true;

@@ -23,18 +23,16 @@ My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.c
 ## Screenshot
 ![Image of my desktop](./image.png)
 
-## See also
-
-[Current wallpaper](https://wallhaven.cc/w/qrgqyq) (Modified to fit my resolution and got rid of the rainbow with GIMP)
-
-[tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)
-
-[Reddit post where I found the wallpaper](https://www.reddit.com/r/unixporn/comments/1w8vwta/dwm_cozy_anime_girl_rice/)
-
-**Old wallpaper links**
+## Wallpapers
+[Anime girl in field](https://wallhaven.cc/w/qrgqyq) (Modified to fit my resolution and got rid of the rainbow with GIMP)
 
 [Anime girl w/ whiskey](https://wallhaven.cc/w/r2qqlj)
 
+## See also
+
+[tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)
+
+**Old wallpaper links**
 [Moraine lake](https://4kwallpapers.com/nature/moraine-lake-landscape-sunrise-mountains-54.html)
 
 [Moonrise rolling](https://4kwallpapers.com/nature/moonrise-rolling-25877.html)

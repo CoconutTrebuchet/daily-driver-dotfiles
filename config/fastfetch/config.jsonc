@@ -3,24 +3,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
 	"logo": {
-		// "source": "NixOS2"
-		"type": "sixel",
-		"source": "$HOME/.config/fastfetch/1200px-Megurine_Luka-2720703339.png",
-		"width": 20,
-		"padding": {
-			"left": 0,
-			"right": 2
-		}
-	},
-	"display": {
-		"color": {
-			"title": "magenta",
-			"keys": "magenta"
-		}
+		"source": "NixOS2"
 	},
   "modules": [
 		"title",
-		"separator",
     "os",
     "host",
     "kernel",

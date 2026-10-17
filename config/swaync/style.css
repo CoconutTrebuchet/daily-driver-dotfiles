@@ -16,7 +16,7 @@
 * {
 		font-family: "Adwaita Sans";
 		font-weight: normal;
-		font-size: 18px;
+		font-size: 19px;
 		color: @text-color;
 }
 
@@ -74,11 +74,11 @@
 
 .summary {
 		padding-top: 5px;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .body {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .notification-group, .notification-default-action:hover,

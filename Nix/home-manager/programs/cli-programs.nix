@@ -11,7 +11,6 @@
       feh
       github-cli
       glib # required to launch gtk apps with gapplication
-      guile
       nh
       nixfmt
       nvd # nix version diff
