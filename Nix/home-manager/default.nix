@@ -4,6 +4,7 @@
     ./nixvim/_main.nix
     ./programs/_imports.nix
     ./user-interface.nix
+    ./window-manager/_imports.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

@@ -15,17 +15,18 @@
     [
       blueman
       evince
-      mousepad
       freetube
       gimp
       gnome-weather
       kdePackages.kdeconnect-kde
       kicad
       libreoffice
+      mousepad
       networkmanagerapplet
       pavucontrol
       peazip
       qalculate-gtk
+      ristretto
       seahorse
       spotify
       thunar

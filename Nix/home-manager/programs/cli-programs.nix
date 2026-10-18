@@ -8,7 +8,6 @@
     [
       # INFO: useful stuff
       dysk
-      feh
       github-cli
       glib # required to launch gtk apps with gapplication
       nh
