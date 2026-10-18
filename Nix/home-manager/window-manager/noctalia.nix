@@ -24,26 +24,22 @@
       };
 
       dock = {
-        enabled = true;
-        background_opacity = 1;
-        reserve_space = false;
         auto_hide = true;
+        background_opacity = 1;
+        enabled = true;
+        reserve_space = false;
       };
 
       bar = {
         default = {
           margin_edge = 0;
           margin_ends = 0;
+          padding = 18;
           position = "left";
           radius = 0;
-          radius_bottom_left = 0;
-          radius_bottom_right = 0;
-          radius_top_left = 0;
-          radius_top_right = 0;
           scale = 1.4;
           thickness = 45;
           widget_spacing = 22;
-          padding = 18;
 
           start = [
             "network"

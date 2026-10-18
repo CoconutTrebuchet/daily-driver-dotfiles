@@ -4,6 +4,6 @@
 
 OUTPUT="$HOME/Pictures/Screenshots/$(date +'%y%m%d_%H%M%S').png"
 
-grim -l 9 "$OUTPUT" \
+grim -l 8 "$OUTPUT" \
   && wl-copy --type image/png < "$OUTPUT" \
   && notify-send 'Screenshot taken!' -u low

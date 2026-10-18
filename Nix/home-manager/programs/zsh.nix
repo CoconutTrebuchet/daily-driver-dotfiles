@@ -19,13 +19,22 @@
   programs.zsh = {
     enable = true;
 
-    # oh-my-zsh = {
-    #   enable = true;
-    #   theme = "sorin";
-    #   plugins = [
-    #     "colored-man-pages"
-    #   ];
-    # };
+    oh-my-zsh = {
+      enable = true;
+      # theme = "sorin";
+      plugins = [
+        "colored-man-pages"
+      ];
+    };
+
+    shellAliases = {
+      flakeupdate = "nix flake update --flake $NH_FLAKE";
+      homelabssh = "ssh cocotreb@lx6810-server";
+      pwdcp = "pwd | wl-copy && echo 'current directory copied'";
+      switchgens = "sudo nix-env --switch-generation --profile /nix/var/nix/profiles/system";
+      ttysolitaire = "ttysolitaire --no-background-color";
+      wttr = "curl wttr.in | less";
+    };
 
     history = {
       path = "${config.home.homeDirectory}/.histfile";
@@ -34,14 +43,6 @@
     };
 
     defaultKeymap = "emacs";
-
-    shellAliases = {
-      flakeupdate = "nix flake update --flake $NH_FLAKE";
-      homelabssh = "ssh cocotreb@lx6810-server";
-      pwdcp = "pwd | wl-copy && echo 'current directory copied'";
-      switchgens = "sudo nix-env --switch-generation --profile /nix/var/nix/profiles/system";
-      wttr = "curl wttr.in | less";
-    };
 
     initContent = ''
       # Unset beep

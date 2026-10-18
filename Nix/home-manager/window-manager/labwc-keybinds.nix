@@ -154,7 +154,7 @@
             };
           }
 
-          # INFO: workspace keybinds
+          # INFO: workspace focus keybinds
           {
             "@key" = "W-1";
             action = {
@@ -191,6 +191,7 @@
             };
           }
 
+          # INFO: workspace send keybinds
           {
             "@key" = "W-S-1";
             action = {
