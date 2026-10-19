@@ -29,7 +29,8 @@
     };
 
     font = {
-      name = "Adwaita Sans 11";
+      name = "Adwaita Sans Regular";
+      size = 11;
     };
 
     gtk3 = {
