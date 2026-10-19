@@ -12,13 +12,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  nix.settings = {
-    extra-substituters = [ "https://noctalia.cachix.org" ];
-    extra-trusted-public-keys = [
-      "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
-    ];
-  };
-
   # Storage optimization
   nix.gc = {
     automatic = true;
@@ -29,7 +22,7 @@
 
   # Parity with non-nix systems
   services.envfs.enable = true;
-  programs.nix-ld.enable = true;
+  # programs.nix-ld.enable = true;
   # programs.nix-ld.libraries = with pkgs; [
   #   # for .NET apps
   #   icu

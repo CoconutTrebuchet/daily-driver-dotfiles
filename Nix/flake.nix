@@ -27,10 +27,10 @@
     };
 
     # noctalia shell
-    noctalia = {
-      # url = "github:noctalia-dev/noctalia";
-      url = "github:noctalia-dev/noctalia/cachix";
-    };
+    # noctalia = {
+    #   url = "github:noctalia-dev/noctalia";
+    #   # url = "github:noctalia-dev/noctalia/cachix";
+    # };
   };
 
   outputs =

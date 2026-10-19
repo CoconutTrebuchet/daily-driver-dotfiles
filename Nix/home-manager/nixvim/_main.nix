@@ -17,6 +17,8 @@
 
   programs.nixvim = {
     enable = true;
+    viAlias = true;
+    vimAlias = true;
     nixpkgs.source = pkgs.path;
 
     colorschemes.onedark = {
@@ -25,8 +27,6 @@
       settings.cmp_itemkind_reverse = false;
     };
     colorschemes.vague.enable = true;
-    viAlias = true;
-    vimAlias = true;
 
     opts = {
       autoindent = true;

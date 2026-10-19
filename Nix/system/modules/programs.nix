@@ -9,7 +9,6 @@
     enable = true;
     wrapperFeatures.gtk = true;
   };
-  programs.labwc.enable = true;
 
   # allow btop to see GPU
   security.wrappers.btop = {
