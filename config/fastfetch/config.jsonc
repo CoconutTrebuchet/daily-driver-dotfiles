@@ -1,7 +1,14 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
 	"logo": {
-		"source": "NixOS_small"
+		"source": "NixOS_small",
+		"padding": {
+			"left": 1,
+			"right": 2
+		}
+	},
+	"display": {
+		"separator": " "
 	},
   "modules": [
 		"title",
@@ -10,6 +17,6 @@
     "kernel",
     "uptime",
     "packages",
-    "shell",
+    "shell"
   ]
 }

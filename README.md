@@ -35,6 +35,7 @@ My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.c
 [tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)
 
 **Old wallpaper links**
+
 [Moraine lake](https://4kwallpapers.com/nature/moraine-lake-landscape-sunrise-mountains-54.html)
 
 [Moonrise rolling](https://4kwallpapers.com/nature/moonrise-rolling-25877.html)

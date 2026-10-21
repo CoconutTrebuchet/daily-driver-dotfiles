@@ -126,11 +126,11 @@
     isNormalUser = true;
     description = "cocotreb";
     extraGroups = [
+      "dialout"
       "networkmanager"
-      "wheel"
       "render"
       "video"
-      "dialout"
+      "wheel"
     ];
   };
 
