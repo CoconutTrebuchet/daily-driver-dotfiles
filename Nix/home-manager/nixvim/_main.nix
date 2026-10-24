@@ -47,13 +47,15 @@
     };
 
     extraConfigVim = ''
-      set undofile
-      set undodir=$HOME/.cache/nvim/undo//
-      set clipboard=unnamedplus
-      set rnu
-      set nu
       colorscheme onedark
+      set clipboard=unnamedplus
+      set nu
+      set rnu
+      set undodir=$HOME/.cache/nvim/undo//
+      set undofile
+      command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
     '';
+    # Wipe registers command: https://github.com/neovim/neovim/discussions/24388
 
     diagnostic = {
       settings = {

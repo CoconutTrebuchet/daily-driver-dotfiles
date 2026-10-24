@@ -29,18 +29,30 @@
       key = "\\";
     }
 
-    # INFO: buffer line moving
+    # INFO: buffer line
     {
-      # previous
+      # move previous
       mode = "n";
       action = "<cmd>BufferLineMovePrev<CR>";
       key = "<leader><";
     }
     {
-      # next
+      # move next
       mode = "n";
       action = "<cmd>BufferLineMoveNext<CR>";
       key = "<leader>>";
+    }
+    {
+      # navigate previous
+      mode = "n";
+      action = "<cmd>BufferLineCyclePrev<CR>";
+      key = "[b";
+    }
+    {
+      # navigate next
+      mode = "n";
+      action = "<cmd>BufferLineCycleNext<CR>";
+      key = "]b";
     }
 
     # INFO: git-related
@@ -76,6 +88,13 @@
       action = "<cmd>ToggleTerm<CR>";
       key = "<leader>t";
     }
+    {
+      # clear registers
+      mode = "n";
+      action = "<cmd>WipeReg<CR>";
+      key = "<leader>cr";
+      options.desc = "Clear registers";
+    }
 
     # INFO: Telescope keybinds
     {
@@ -110,8 +129,13 @@
     }
     {
       mode = "n";
-      action = "<cmd>Telescope man_pages<CR>";
-      key = "<leader>fm";
+      action = "<cmd>Telescope registers<CR>";
+      key = "<leader>fr";
+    }
+    {
+      mode = "n";
+      action = "<cmd>Telescope command_history<CR>";
+      key = "<leader>fh";
     }
   ];
 }

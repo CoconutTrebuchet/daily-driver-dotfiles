@@ -21,7 +21,7 @@
 
   networking.nameservers = [
     "9.9.9.9"
-    "9.9.9.11"
+    "149.112.112.112"
   ];
 
   networking.firewall = {

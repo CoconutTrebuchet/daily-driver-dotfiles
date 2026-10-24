@@ -16,7 +16,7 @@
       nvtopPackages.intel
       openjdk
       tldr
-      tokei # code summary
+      tokei
       tray-tui
       wine
       yt-dlp

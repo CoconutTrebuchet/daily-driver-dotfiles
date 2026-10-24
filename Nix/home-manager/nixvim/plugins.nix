@@ -26,20 +26,32 @@
       gitsigns.enable = true;
       todo-comments.enable = true;
       render-markdown.enable = true;
+
       colorizer = {
         enable = true;
         settings.user_default_options.names = false;
       };
+
       navic = {
         enable = true;
         settings.lsp.auto_attach = true;
       };
+
       bufferline = {
         enable = true;
         settings.options = {
           indicator.style = "none";
         };
       };
+
+      cursorline = {
+        enable = true;
+        settings = {
+          cursorline.enable = false;
+          cursorword.enable = true;
+        };
+      };
+
       lualine = {
         enable = true;
         settings = {
@@ -63,12 +75,6 @@
           };
         };
       };
-    };
-
-    # force the winbar to not be a different color than the bg
-    highlight = {
-      WinBar.bg = "NONE";
-      WinBarNC.bg = "NONE";
     };
 
     extraConfigLua = ''

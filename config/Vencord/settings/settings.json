@@ -421,7 +421,7 @@
                         "id": "w59l7zxwvu",
                         "name": "Arcade Friends",
                         "color": 3066993,
-                        "collapsed": false,
+                        "collapsed": true,
                         "channels": [
                             "1441930799413723170",
                             "1449535209178398820",
@@ -735,6 +735,12 @@
         },
         "GifProviderSwitcher": {
             "enabled": false
+        },
+        "DirectFileDownload": {
+            "enabled": false
+        },
+        "JumpToTop": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -747,7 +753,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1791909283855
+        "settingsSyncVersion": 1792859477007
     },
     "uiElements": {
         "chatBarButtons": {},
