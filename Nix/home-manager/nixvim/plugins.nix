@@ -16,8 +16,32 @@
       telescope.enable = true;
       toggleterm.enable = true;
       treesitter.enable = true;
-      which-key.enable = true;
       yazi.enable = true;
+
+      which-key = {
+        enable = true;
+        settings = {
+          icons.group = "…";
+          spec = [
+            {
+              __unkeyed-1 = "<leader>f";
+              group = "Telescope";
+            }
+            {
+              __unkeyed-1 = "<leader>g";
+              group = "Git";
+            }
+            {
+              __unkeyed-1 = "<leader><leader>";
+              group = "Buffers";
+            }
+            {
+              __unkeyed-1 = "<leader>c";
+              group = "Clear";
+            }
+          ];
+        };
+      };
     };
 
     # look & feel

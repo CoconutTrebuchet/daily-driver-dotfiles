@@ -7,7 +7,7 @@
         "tray",
         "sway/scratchpad",
         "sway/mode",
-        "sway/window",
+        "sway/window"
     ],
 
     "modules-center": ["clock#date", "clock#time"],
@@ -21,13 +21,13 @@
         "backlight",
         "pulseaudio",
         "battery",
-        "idle_inhibitor",
+        "idle_inhibitor"
     ],	
 
     "workspaces": {
         "disable-scroll": true,
         "disable-markup": true,
-        "format": "{index}",
+        "format": "{index}"
     },
 
     "sway/scratchpad": {
@@ -135,7 +135,7 @@
         "on-click": "pavucontrol",
         "format-icons": {
         "default": ["󰕿", "󰖀", "󰕾"]
-        }, 
+        } 
     },
 
     "idle_inhibitor": {
@@ -153,5 +153,5 @@
         "exec": "$HOME/.config/waybar/scripts/weather.py",
         "return-type": "json",
         "on-click": "gnome-weather"
-    },
+    }
 }

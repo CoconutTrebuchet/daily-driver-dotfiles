@@ -1,4 +1,5 @@
-ATTENTION: I plan on privating this repo a couple of weeks from now, I decided that I wasn't that comfortable having this public. Thank you to the people who checked my work out!
+> [!NOTE]
+> I plan on privating this repo a couple of weeks from now, I decided that I wasn't that comfortable having this public. Thank you to the people who checked my work out!
 
 # Daily Driver Dotfiles
 My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Window manager is SwayWM with my own opinionated keybinds. Display manager is greetd with tuigreet. This config is also ported to non-NixOS distros.

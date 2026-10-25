@@ -134,8 +134,8 @@
     }
     {
       mode = "n";
-      action = "<cmd>Telescope command_history<CR>";
-      key = "<leader>fh";
+      action = "<cmd>Telescope quickfix<CR>";
+      key = "<leader>fq";
     }
   ];
 }
