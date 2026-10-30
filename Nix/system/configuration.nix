@@ -136,6 +136,8 @@
 
   users.users."root".shell = pkgs.bash;
 
+  nix.settings.trusted-users = [ "@wheel" ];
+
   # Bluetooth
   hardware.bluetooth = {
     enable = true;
@@ -159,6 +161,9 @@
     };
   };
 
+  # a backup font
+  fonts.packages = with pkgs; [ noto-fonts ];
+
   # display manager
   services.greetd = {
     enable = true;
@@ -180,8 +185,19 @@
   services.fwupd.enable = true;
 
   # Power-related services
-  services.power-profiles-daemon.enable = true;
+  services.power-profiles-daemon.enable = false;
   services.upower.enable = true;
+  services.tlp = {
+    enable = true;
+    pd.enable = true;
+    settings = {
+      START_CHARGE_THRESH_BAT0 = 80;
+      STOP_CHARGE_THRESH_BAT0 = 85;
+      TLP_PROFILE_DEFAULT = "BAL";
+      RUNTIME_PM_ON_AC = "on";
+      RUNTIME_PM_ON_BAT = "on";
+    };
+  };
 
   # swap
   swapDevices = [

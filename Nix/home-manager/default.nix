@@ -4,9 +4,16 @@
     ./nixvim/_main.nix
     ./programs/_imports.nix
     ./user-interface.nix
+    ./zsh.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
+  fonts.fontconfig.enable = true;
+
+  # targets.genericLinux = {
+  #   enable = true;
+  #   gpu.enable = true;
+  # };
 
   home = {
     username = "cocotreb";
@@ -24,6 +31,7 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
+    projects = null;
   };
 
   programs.git = {

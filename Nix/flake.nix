@@ -25,12 +25,6 @@
       url = "github:FKouhai/helium2nix/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # noctalia shell
-    # noctalia = {
-    #   url = "github:noctalia-dev/noctalia";
-    #   # url = "github:noctalia-dev/noctalia/cachix";
-    # };
   };
 
   outputs =

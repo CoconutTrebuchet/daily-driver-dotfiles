@@ -28,6 +28,7 @@
     };
 
     shellAliases = {
+      ff = "fastfetch";
       flakeupdate = "nix flake update --flake $NH_FLAKE";
       homelabssh = "ssh cocotreb@lx6810-server";
       pwdcp = "pwd | wl-copy && echo 'current directory copied'";

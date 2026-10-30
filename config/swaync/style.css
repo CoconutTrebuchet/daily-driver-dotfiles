@@ -2,12 +2,12 @@
  * ORIGINAL DOTFILES: https://github.com/ErikReider/SwayNotificationCenter/discussions/183#discussioncomment-8022846
  */
 
-@define-color cc-bg #0d0d0d;
-@define-color noti-border-color #242424;
-@define-color noti-bg #353535;
-@define-color noti-bg-darker #242424;
+@define-color accent #3f7aa6;
+@define-color bg #0d0d0d;
+@define-color border #242424;
+@define-color fg #353535;
+@define-color fg-dark #242424;
 @define-color text-color #e6e6e6;
-@define-color accent-color #3f7aa6;
 
 :root {
   --border-radius: 0px;
@@ -25,12 +25,12 @@
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
-    background: @noti-bg-darker;
+    background: @fg-dark;
 }
 
 .control-center {
-    background: @cc-bg;
-    outline: 1px solid @noti-border-color;
+    background: @bg;
+    outline: 1px solid @border;
     outline-offset: -1px;
     border-radius: 0px;
     /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); */
@@ -52,8 +52,8 @@
 }
 
 .notification, .notification:hover {
-    background: @cc-bg;
-    border: 1px solid @noti-border-color;
+    background: @bg;
+    border: 1px solid @border;
     margin: 0px;
     padding: 5px;
 }
@@ -97,24 +97,24 @@
 /* Notification Actions */
 /* ==================== */
 .notification-action, .notification-action:hover {
-    background-color: @cc-bg;
+    background-color: @bg;
     color: @text-color;
     border-top: none;
     border-radius: 0px;
 }
 
 .notification-action>button {
-    background-color: @noti-bg-darker;
+    background-color: @fg-dark;
     color: @text-color;
 }
 
 .notification-action>button:hover {
-    background-color: @noti-bg;
+    background-color: @fg;
     color: @text-color;
 }
 
 .notification-action>button:active {
-    background-color: @accent-color;
+    background-color: @accent;
     color: @text-color;
 }
 
@@ -125,7 +125,7 @@
 /* Widgets */
 /* ======= */
 .widget-title {
-    /* background: @noti-bg-darker; */
+    /* background: @fg-dark; */
     background: transparent;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
@@ -134,25 +134,25 @@
 
 .widget-title>button {
     text-shadow: none;
-    background: @noti-bg-darker;
-    color: @cc-bg;
+    background: @fg-dark;
+    color: @bg;
     box-shadow: none;
     border-radius: 0px;
     padding: 2px 20px 2px 20px;
 }
 
 .widget-title>button:hover {
-    background: @noti-bg;
+    background: @fg;
     color: @text-color;
 }
 
 .widget-title>button:active {
-    background: @accent-color;
+    background: @accent;
     color: @text-color;
 }
 
 .widget-dnd {
-    /* background: @noti-bg-darker; */
+    /* background: @fg-dark; */
     background: transparent;
     padding: 5px 10px;
     margin: 5px 10px 10px 10px;
@@ -162,20 +162,20 @@
 .widget-dnd>switch {
     border-radius: 0px;
     padding: 2px 2px 2px 2px;
-    background: @noti-bg;
+    background: @fg;
 }
 
 .widget-dnd>switch:checked {
-    background: @accent-color;
+    background: @accent;
 }
 
 .widget-dnd>switch slider {
-    background: @cc-bg;
+    background: @bg;
     border-radius: 0px;
 }
 
 .widget-dnd>switch:checked slider {
-    background: @cc-bg;
+    background: @bg;
     border-radius: 0px;
 }
 

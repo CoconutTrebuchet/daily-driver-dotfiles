@@ -1,9 +1,8 @@
 {
   imports = [
-    ./cli-programs.nix
+    ./cli-apps.nix
     ./gaming.nix
-    ./gui-programs.nix
+    ./gui-apps.nix
     ./window-manager.nix
-    ./zsh.nix
   ];
 }

@@ -56,25 +56,25 @@
       # swapping buffers between windows
       {
         mode = "n";
-        key = "<leader><leader>h";
+        key = "<leader>bh";
         action = "<cmd>lua require('smart-splits').swap_buf_left()<CR>";
         options.desc = "Swap buffer left";
       }
       {
         mode = "n";
-        key = "<leader><leader>j";
+        key = "<leader>bj";
         action = "<cmd>lua require('smart-splits').swap_buf_down()<CR>";
         options.desc = "Swap buffer down";
       }
       {
         mode = "n";
-        key = "<leader><leader>k";
+        key = "<leader>bk";
         action = "<cmd>lua require('smart-splits').swap_buf_up()<CR>";
         options.desc = "Swap buffer up";
       }
       {
         mode = "n";
-        key = "<leader><leader>l";
+        key = "<leader>bl";
         action = "<cmd>lua require('smart-splits').swap_buf_right()<CR>";
         options.desc = "Swap buffer right";
       }

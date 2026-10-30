@@ -172,9 +172,6 @@
         "Experiments": {
             "enabled": false
         },
-        "ExpressionCloner": {
-            "enabled": false
-        },
         "F8Break": {
             "enabled": false
         },
@@ -396,7 +393,7 @@
                         "id": "w1g35gly94m",
                         "name": "College Friends",
                         "color": 15844367,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1485446208947228703",
                             "1478440359338971391",
@@ -438,7 +435,7 @@
                         "id": "xxwt6kcmycp",
                         "name": "High School Friends",
                         "color": 15158332,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1212598489088008213",
                             "886040876298694729",
@@ -741,6 +738,9 @@
         },
         "JumpToTop": {
             "enabled": false
+        },
+        "ExpressionManager": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -753,7 +753,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1792859477007
+        "settingsSyncVersion": 1793309696165
     },
     "uiElements": {
         "chatBarButtons": {},

@@ -19,7 +19,7 @@
       gimp
       gnome-weather
       kdePackages.kdeconnect-kde
-      kicad
+      # kicad
       libreoffice
       mousepad
       networkmanagerapplet
@@ -29,6 +29,7 @@
       ristretto
       seahorse
       spotify
+      srain
       thunar
       thunderbird
       vesktop

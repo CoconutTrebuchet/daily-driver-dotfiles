@@ -1,12 +1,15 @@
 #!/bin/bash
 # This script is intended to let me toggle my power profiles with
 # my F8 ("Mode") key. 
-current=$(powerprofilesctl get)
+current=$(tlpctl get)
 
 if [[ "$current" = "balanced" ]]; then
-  powerprofilesctl set performance
+  tlpctl set performance
 elif [[ "$current" = "performance" ]]; then
-  powerprofilesctl set power-saver
+  tlpctl set power-saver
 else
-  powerprofilesctl set balanced
+  tlpctl set balanced
 fi
+
+# if you are using powerprofilesctl,
+# simply replace each "tlpctl" with powerprofilesctl

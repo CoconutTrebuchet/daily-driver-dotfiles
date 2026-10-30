@@ -6,6 +6,16 @@
 }:
 {
   home = {
+    # fonts
+    packages = with pkgs; [
+      adwaita-fonts
+      font-awesome
+      nerd-fonts.hack
+      noto-fonts
+      vista-fonts
+    ];
+
+    # cursor
     pointerCursor = {
       enable = true;
       name = "phinger-cursors-dark";
@@ -40,7 +50,6 @@
         "file:///home/cocotreb/Music"
         "file:///home/cocotreb/Nix"
         "file:///home/cocotreb/Pictures"
-        "file:///home/cocotreb/Projects"
         "file:///home/cocotreb/Videos"
         "file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
       ];

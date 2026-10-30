@@ -32,7 +32,7 @@
               group = "Git";
             }
             {
-              __unkeyed-1 = "<leader><leader>";
+              __unkeyed-1 = "<leader>b";
               group = "Buffers";
             }
             {
